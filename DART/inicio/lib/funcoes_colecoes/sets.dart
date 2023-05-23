@@ -28,4 +28,8 @@ void main(List<String> args) {
   print('**** fazendo busca ****');
   int? busca = set1.lookup(15);
   print(busca);
+
+  //retornando um elemento
+  print('**** retornando um elemento ****');
+  print(set2.elementAtOrNull(2));
 }
