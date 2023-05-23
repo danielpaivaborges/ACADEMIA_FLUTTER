@@ -26,6 +26,6 @@ void main(List<String> args) {
 
   //fazendo uma busca
   print('**** fazendo busca ****');
-  var busca = set1.lookup(15);
+  int? busca = set1.lookup(15);
   print(busca);
 }
