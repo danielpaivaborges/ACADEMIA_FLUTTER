@@ -1,9 +1,10 @@
 void main(List<String> args) {
   var idade = "50 anos";
-  String? nome;
+  //String? nome;
 
   try {
     var convertido = int.parse(idade);
+    print(convertido);
   } on FormatException catch (s) {
     print("ocorreu um erro de formatação $s");
   } catch (e, s) {

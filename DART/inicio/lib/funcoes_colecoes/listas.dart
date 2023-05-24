@@ -1,4 +1,15 @@
 void main(List<String> args) {
+  //LISTAS E NULL SAFETY
+
+  //ESTA LISTA ACEITA QUALQUER TIPO DE STRING MAS NÃO ACEITA NULL DENTRO DA LISTA E NÃO ACEITA LISTA NULA
+  List<String> lista = [];
+  //ESTA LISTA ACEITA QUALQUER TIPO DE STRING E O VALOR NULL DENTRO DA LISTA MAS NÃO ACEITA QUE A LISTA SEJA NULA
+  List<String?> lista2 = [];
+  //ESTA LISTA ACEITA TANTO VALORES NULOS DENTRO DA LISTA COMO UMA LISTA NULA
+  List<String?>? lista3 = [];
+  var listao = [...lista, ...lista2, ...lista3];
+  print(listao);
+
   var numeros = List.generate(10, (index) => index);
   numeros.forEach(print);
 
