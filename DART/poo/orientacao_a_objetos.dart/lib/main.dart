@@ -1,4 +1,4 @@
-import 'package:orientacao_a_objetos/classes/camisesta.dart';
+import 'package:orientacao_a_objetos/classes/camiseta.dart';
 
 void main(List<String> args) {
   var camiseta1 = Camiseta(marca: 'Nike', tamanho: "P");
