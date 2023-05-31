@@ -14,4 +14,8 @@ class Gol implements Carro {
   int velocidade() {
     return 120;
   }
+
+  String tipoRoda() {
+    return "rodas esportivas";
+  }
 }
