@@ -8,6 +8,11 @@ class Cliente implements Comparable<Cliente> {
   });
 
   @override
+  String toString() {
+    return this.nome;
+  }
+
+  @override
   int compareTo(Cliente other) {
     return nome.compareTo(other.nome);
   }
