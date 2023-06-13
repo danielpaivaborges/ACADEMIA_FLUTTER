@@ -1,0 +1,9 @@
+[
+  {
+    "nome": "Daniel Paiva",
+    "idade": 49,
+    "nomeCursos": ["academia do flutter", "imersão getx"]
+  },
+  { "nome": "arthur fellipe", "idade": 18, "nomeCursos": "imersão getx" },
+  { "nome": "Carolaine Cardoso", "idade": 24, "nomeCursos": "imersão getx" }
+]

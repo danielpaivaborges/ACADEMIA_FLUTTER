@@ -1,0 +1,19 @@
+{
+  "nome": "Daniel Paiva",
+  "idade": 49,
+  "isAluno": true,
+  "nomeCursos": ["academia do flutter", "imersão getx"],
+  "cursos": [
+    { "id": 1, "nome": "academia do flutter", "isAluno": true },
+    { "id": 2, "nome": "Imersão Getx", "isAluno": false }
+  ],
+  "endereco": {
+    "rua": "RUA DAS ACÁCIAS",
+    "numero": 200,
+    "CEP": "35617-000"
+  },
+  "Telefone": {
+    "ddd": "37",
+    "numeroTelefone": "35551112"
+  }
+}
