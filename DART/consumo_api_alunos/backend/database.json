@@ -1,0 +1,133 @@
+{
+  "users": [
+    {
+      "id": 0,
+      "name": "Rodrigo Rahman",
+      "email": "rodrigorahman@academiadoflutter.com.br",
+      "password": "123"
+    },
+    {
+      "id": 1,
+      "name": "Guilherme",
+      "email": "guilherme@gmail.com",
+      "password": "1234"
+    }
+  ],
+  "adm_users": [
+    {
+      "id": 1,
+      "name": "Rodrigo Rahman",
+      "email": "rodrigorahman@academiadoflutter.com.br",
+      "password": "123",
+      "profile": "ADMIN"
+    },
+    {
+      "id": 2,
+      "name": "Guilherme",
+      "email": "Guilherme@gmail.com",
+      "password": "1234",
+      "profile": "SUPORTE"
+    }
+  ],
+  "products": [
+    {
+      "id": 0,
+      "title": "Academia do flutter"
+    },
+    {
+      "id": 1,
+      "title": "Jornada Dart"
+    },
+    {
+      "id": 2,
+      "title": "Jornada GetX"
+    }
+  ],
+  "alunos": [
+    {
+      "id": 0,
+      "nome": "daniel paiva borges",
+      "idade": 49,
+      "nomeCursos": [
+        "Academia do Flutter",
+        "Jornada Getx",
+        "Jornada Clean Code"
+      ],
+      "cursos": [
+        {
+          "id": 1,
+          "nome": "academia do Flutter",
+          "isAluno": true
+        },
+        {
+          "id": 2,
+          "nome": "Jornada GetX",
+          "isAluno": true
+        },
+        {
+          "id": 3,
+          "nome": "Jornada Clean Code",
+          "isAluno": true
+        },
+        {
+          "id": 4,
+          "nome": "Jornada Arquitetura",
+          "isAluno": false
+        }
+      ],
+      "endereço": {
+        "rua": "rua x",
+        "numero": 200,
+        "cep": "35617000",
+        "cidade": {
+          "id": 1,
+          "nome": "Serra da Saudade",
+          "Telefone": {
+            "ddd": 37,
+            "telefone": "35551112"
+          }
+        }
+      }
+    },
+    {
+      "id": 1,
+      "nome": "arthur fellipe mateus paiva",
+      "nomeCursos": ["Academia do Flutter"],
+      "cursos": [
+        {
+          "id": 1,
+          "nome": "academia do Flutter",
+          "isAluno": true
+        },
+        {
+          "id": 2,
+          "nome": "Jornada GetX",
+          "isAluno": false
+        },
+        {
+          "id": 3,
+          "nome": "Jornada Clean Code",
+          "isAluno": false
+        },
+        {
+          "id": 4,
+          "nome": "Jornada Arquitetura",
+          "isAluno": false
+        }
+      ],
+      "endereço": {
+        "rua": "rua xyz",
+        "numero": 135,
+        "cep": "35617000",
+        "cidade": {
+          "id": 1,
+          "nome": "Serra da Saudade",
+          "Telefone": {
+            "ddd": 37,
+            "telefone": "35551112"
+          }
+        }
+      }
+    }
+  ]
+}
