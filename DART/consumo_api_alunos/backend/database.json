@@ -78,7 +78,7 @@
       "endereço": {
         "rua": "rua x",
         "numero": 200,
-        "cep": "35617000",
+        "CEP": "35617000",
         "cidade": {
           "id": 1,
           "nome": "Serra da Saudade",
@@ -118,7 +118,7 @@
       "endereço": {
         "rua": "rua xyz",
         "numero": 135,
-        "cep": "35617000",
+        "CEP": "35617000",
         "cidade": {
           "id": 1,
           "nome": "Serra da Saudade",
