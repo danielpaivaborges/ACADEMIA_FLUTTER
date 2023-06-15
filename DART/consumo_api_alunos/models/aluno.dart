@@ -42,6 +42,7 @@ class Aluno {
         id: map['id'] ?? 0,
         nome: map['nome'] ?? '',
         idade: map['idade'],
+        //atenção a esta conversão, aprenda ao maximo
         nomeCursos: List<String>.from(map['nomeCursos']),
         cursos: map['cursos']
                 ?.map<Curso>((cursoMap) => Curso.fromMap(cursoMap))
@@ -49,4 +50,5 @@ class Aluno {
             [],
         endereco: Endereco.fromMap(map['endereco'] ?? <String, dynamic>{}));
   }
+  factory Aluno.fromJson(String json) => Aluno.fromMap(jsonDecode(json));
 }
