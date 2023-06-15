@@ -1,7 +1,4 @@
-// ignore_for_file: public_member_api_docs, sort_constructors_first
-
 import 'dart:convert';
-
 import 'curso.dart';
 import 'endereco.dart';
 
@@ -35,24 +32,25 @@ class Aluno {
     return map;
   }
 
-  String toJson() => json.encode(toMap());
-
   factory Aluno.fromMap(Map<String, dynamic> map) {
     return Aluno(
-        cursos: List<Curso>.from(
-          (map['cursos'] as List<int>).map<Curso>(
-            (x) => Curso.fromMap(x as Map<String, dynamic>),
-          ),
-        ),
-        endereco: Endereco.fromMap(map['endereco'] as Map<String, dynamic>),
-        id: (map['id'] ?? 0) as int,
-        nome: (map['nome'] ?? "") as String,
-        idade: map['idade'] != null ? map['idade'] as int : null,
-        nomeCursos: List<String>.from(
-          (map['nomeCursos'] as List<String>),
-        ));
+        id: map['id'] ?? 0,
+        nome: map['nome'] ?? '',
+        idade: map['idade'],
+        nomeCursos: List<String>.from(map['nomeCursos']),
+        cursos: map['cursos']
+                ?.map<Curso>((cursoMapa) => Curso.fromMap(cursoMapa))
+                .toList() ??
+            <Curso>[],
+        endereco: Endereco.fromMap(map['endereco'] ?? <String, dynamic>{}));
   }
+
+  String toJson() => json.encode(toMap());
 
   factory Aluno.fromJson(String source) =>
       Aluno.fromMap(json.decode(source) as Map<String, dynamic>);
+  @override
+  String toString() {
+    return "id: $id - $nome";
+  }
 }

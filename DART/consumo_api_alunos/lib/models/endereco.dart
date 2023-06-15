@@ -34,15 +34,14 @@ class Endereco {
 //DESERIALIZAÇÃO
   factory Endereco.fromMap(Map<String, dynamic> map) {
     return Endereco(
-      rua: (map['rua'] ?? "") as String,
-      numero: (map['numero'] ?? 0) as int,
-      cep: (map['CEP'] ?? "") as String,
-      cidade: Cidade.fromMap((map['cidade'] ?? {}) as Map<String, dynamic>),
-      telefone:
-          Telefone.fromMap((map['telefone'] ?? {}) as Map<String, dynamic>),
+      rua: map['rua'] ?? "",
+      numero: map['numero'] ?? 0,
+      cep: map['CEP'] ?? "",
+      cidade: Cidade.fromMap((map['cidade'] ?? {})),
+      telefone: Telefone.fromMap((map['telefone'] ?? {})),
     );
   }
 
   factory Endereco.fromJson(String source) =>
-      Endereco.fromMap(json.decode(source) as Map<String, dynamic>);
+      Endereco.fromMap(json.decode(source));
 }

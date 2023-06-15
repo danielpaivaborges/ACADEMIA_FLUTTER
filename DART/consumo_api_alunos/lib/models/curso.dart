@@ -19,15 +19,15 @@ class Curso {
     };
   }
 
+  String toJson() => json.encode(toMap());
+
   factory Curso.fromMap(Map<String, dynamic> map) {
     return Curso(
-      id: (map['id'] ?? 0) as int,
-      nome: (map['nome'] ?? "") as String,
-      isAluno: (map['isAluno'] ?? false) as bool,
+      id: map['id'] ?? 0,
+      nome: map['nome'] ?? "",
+      isAluno: map['isAluno'] ?? false,
     );
   }
-
-  String toJson() => json.encode(toMap());
 
   factory Curso.fromJson(String source) =>
       Curso.fromMap(json.decode(source) as Map<String, dynamic>);
