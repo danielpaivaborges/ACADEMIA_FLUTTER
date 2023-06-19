@@ -10,11 +10,12 @@ class Cliente {
   @override
   String toString() {
     return idade != 0
-        ? "nome: ${nome.toUpperCase()}, id: $id, idade: $idade"
-        : "nome: ${nome.toUpperCase()}, id: $id";
+        ? "nome: $nome, id: $id, idade: $idade"
+        : "nome: $nome, id: $id";
   }
 
   //SERIALIZAÇÃO
+
   Map<String, dynamic> toMap() {
     return {"id": id, "nome": nome, "idade": idade ?? 0};
   }
@@ -28,5 +29,5 @@ class Cliente {
         nome: mapa["nome"] ?? "",
         idade: mapa["idade"] ?? 0);
   }
-  factory Cliente.fromJson(String json) => Cliente.fromMap(jsonDecode(json));
+  factory Cliente.toJson(String json) => Cliente.fromMap(jsonDecode(json));
 }
