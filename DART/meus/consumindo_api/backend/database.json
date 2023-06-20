@@ -1,0 +1,21 @@
+{
+  "clientes": [
+    {
+      "id": 1,
+      "nome": "daniel paiva",
+      "idade": 49,
+      "telefone": { "ddd": "37", "numero": "35551112" }
+    },
+    {
+      "id": 2,
+      "nome": "Arthur",
+      "idade": 19,
+      "telefone": { "ddd": "37", "numero": "35551112" }
+    },
+    {
+      "id": 3,
+      "nome": "marilia",
+      "telefone": { "ddd": "37", "numero": "35551112" }
+    }
+  ]
+}
